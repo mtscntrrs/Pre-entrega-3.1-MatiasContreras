@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #f9f5eb; // Color de la barra de nav
+    border-bottom: 2px solid #8c6558;
+    padding: 10px 0;
+
+    .navbar-brand {
+        font-family: 'Arial', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #8c6558; // Color del título de la nav
+        margin-right: 30px;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-right: 15px;
+        }
+
+        .nav-link {
+            color: #5c473e;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease; // Transición suave al pasar el cursor
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-radius: 5px; // Borde redondeado de los enlaces
+
+            &:hover {
+                color: #9b7867; // Color del texto al pasar el cursor
+                background-color: #e0c9b8;
+            }
+        }
+    }
+
+    .navbar-toggler-icon {
+        color: #8c6558;
+    }
+}
+
+.navbar {
+    // Altura de la barra de nav
+    $navbar-height: 90px;
+
+    +.container {
+        margin-top: $navbar-height;
+    }
+}

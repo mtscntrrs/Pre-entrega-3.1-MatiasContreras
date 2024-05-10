@@ -1,0 +1,59 @@
+// Variables de colores
+$color-fondo: #f9f5eb; // Beige claro para el fondo
+$color-titulo: #8c6558; // Marrón oscuro para los títulos
+$color-texto: #5c473e; // Marrón medio para el texto principal
+$color-enlace: #9b7867; // Marrón para los enlaces
+$color-footer: #e0c9b8; // Beige oscuro para el pie de página
+
+// Estilos para el menú
+.menu {
+    .col-md-4 {
+        background-color: $color-fondo;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        h3 {
+            color: $color-titulo;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+
+            li {
+                list-style-type: none;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+//menu
+.menu {
+    .card {
+        margin-bottom: 20px;
+
+        .card-body {
+            align-items: center;
+
+            .card-image {
+                max-width: 100px;
+                height: auto;
+                margin-right: 20px; // Espaciado entre la imagen y el contenido
+            }
+
+            .card-content {
+                flex-grow: 1;
+                font-size: 14px; // Tamaño del texto del producto
+                margin-bottom: 0;
+            }
+        }
+
+        .card-price {
+            font-size: 16px; // Tamaño del precio
+            margin-bottom: 0;
+        }
+    }
+}
